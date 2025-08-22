@@ -1,9 +1,7 @@
 import random
-
 def game():
     print("😊 Snake, Water, Gun Game 🎮")
     print("🤔 Choose one: Snake (s), Water (w), Gun (g)")
-
     user_choice = input("Your choice🤞: ").lower()
     choices = ['s', 'w', 'g']
     computer_choice = random.choice(choices)
@@ -11,8 +9,6 @@ def game():
         print("please chose valid input[s,w,g]😒")
         return
     print(f"Computer chose: {computer_choice}")
-   
-
     if user_choice == computer_choice:
         print("It's a Draw! 😐")
     elif (user_choice == 's' and computer_choice == 'w') or \
@@ -21,6 +17,4 @@ def game():
         print("🎉 You Win!")
     else:
         print("💻 Computer Wins!")
-
-
 game()
